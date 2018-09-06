@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -14,6 +13,7 @@ public class TransactionsBatchProcessor {
 		System.out.println("Start >>>>");
 		TransactionsBatchProcessor obj = new TransactionsBatchProcessor();
 		obj.readFile("data.txt");
+		obj.readFile("info.txt");
 		System.out.println("<<<< End");
 	}
 
